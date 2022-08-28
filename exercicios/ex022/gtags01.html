@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML</title>
+    <style>
+        body{
+            background-color: #7f7f7f;
+            margin: 0;
+        }
+        header{
+            text-align: center;
+            background-color: #11113f;
+        }
+        a{
+            margin: 10px 35px;
+            font: 1em sans-serif;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: blue;
+            color: white;
+        }
+        .conteudo{
+            text-align: left;
+        }
+        article{
+            background-color: white;
+            width: auto;
+            height: auto;
+            border: 2px solid rgb(43, 137, 226) ;
+            margin: 5px;
+            padding: 7px;
+            font: 1em sans-serif;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+
+        }
+        aside{
+            text-align: right;
+        }
+        nav{
+            background-color: #a1c1fa;
+            padding: 5px 5px;
+        }
+        .principal{
+            margin-top: 0px;
+            font-family: Times, serif;
+            color: white;
+        }
+        body > footer{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 50px 0px;
+            padding: 3px;
+        }
+        header > h1{
+            margin: 0px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1 class="principal">Titulo do Site</h1>
+            <nav><a href="#">Inicio</a> <a href="#">Páginas</a> <a href="#">Matérias</a> <a href="#">Configurações</a></nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2 class="conteudo">Subtitulo do Artigo</h2>
+                    <p class="conteudo" style="text-indent: 2px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quidem placeat corporis earum incidunt, deleniti ipsum quas, voluptatem quo facere quia molestias, aspernatur dolorum aperiam nobis eaque recusandae magni similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat deleniti possimus aut, animi quas unde assumenda id recusandae voluptate suscipit in aliquid autem at repellat ipsa fugiat corrupti dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, id atque facere necessitatibus unde, enim accusantium dolor doloribus est doloremque dolorum, beatae veniam consequatur sed voluptatibus iure eum vero! Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero obcaecati, itaque vel ab ex, provident quae magnam laudantium enim cumque architecto dolores quaerat sequi voluptates. Ratione molestias animi deleniti culpa?</p>
+                    <p class="conteudo" style="text-indent: 2px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde delectus possimus harum quaerat, aspernatur voluptatibus sit assumenda minima, amet iure quas molestiae. Corrupti dolorum fugiat omnis, ullam numquam quibusdam?</p>
+                </article>
+                <article>
+                    <h2 class="conteudo">Subtitulo do Artigo</h2>
+                    <p class="conteudo" style="text-indent: 2px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque tempora, eos ratione labore iure. Ab, sed. Sint debitis doloribus possimus eveniet, dicta, quaerat ipsa fugiat optio excepturi sunt soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus natus eaque, minus repellat, fugiat eum quae expedita fuga aut vitae asperiores corporis quas sunt laudantium. Provident veritatis dignissimos laboriosam similique.</p>
+                    <aside>
+                        Conteudo periferico do Artigo
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            Desenvolvido por GuilhermeFreitas &copy;
+        </footer>
+</body>
+</html>
