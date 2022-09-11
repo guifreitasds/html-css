@@ -70,7 +70,7 @@ section.normal{
 section#img01{
     background-color: blue;
     background-image: url(../imagens/background001.jpg);
-    background-position: center center;
+    background-position: center center; /* Posição do BG foi modificada de R-C, para C-C */
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -78,7 +78,7 @@ section#img01{
 }
 
 section#img02{
-    background-color: blue;
+    background-color: #232323; /* Cor padrão para em caso de problemas com a imagem */
     background-image: url(../imagens/background002.jpg);
     background-position: right bottom;
     background-size: cover;
