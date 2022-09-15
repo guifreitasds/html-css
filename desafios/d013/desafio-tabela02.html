@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo desafio de mesclagem</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            height: 300px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+        td:hover{
+            background-color: red;
+        }
+        td.class1:hover{
+            background-color: blue;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Teste de Mesclagem 2.0</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td class="class1">D</td>
+            <td class="class1">E</td>
+            <td class="class1">F</td>
+        </tr>
+        <tr>
+            <td class="class1">G</td>
+            <td class="class1">H</td>
+            <td class="class1">I</td>
+        </tr>
+        <tr>
+            <td class="class1">J</td>
+            <td class="class1">L</td>
+            <td class="class1">M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+</body>
+</html>
