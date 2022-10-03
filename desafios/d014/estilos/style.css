@@ -7,8 +7,8 @@
 }
 
 html, body{
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Atributo utilizado para indicar o quanto o conteúdo vai ocupar do viewheight da tela do dispositivo */
+    width: 100vw;  /* Atributo utilizado para indicar o quanto o conteúdo vai ocupar do viewwidth da tela do dispositivo */
     background-color: black;
 }
 
@@ -25,10 +25,10 @@ main{
 
 section#telefone{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; /* Atributo utilizado em conjunto com o "position" e faz com que o elemento indicado seja movido, nesse caso, 50% do topo */
+    left: 50%; /* Atributo utilizado em conjunto com o "position" e faz com que o elemento seja movido, nesse caso, 50% da esquerda */
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Correção dos atributos top e left , para que o "inicio" do elemento seja movido do canto superior esquerdo para o meio" */
 
 
 
