@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img{
+    width: 100vw;
+}
+a{
+    display: block;
+    color: white;
+    font-weight: bolder;
+    background-color: darkred;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover{
+    transform: translate(0px, -2px);
+    background-color: rgb(25, 149, 0);
+    color: white;
+    transition-duration: .5s;
+}
