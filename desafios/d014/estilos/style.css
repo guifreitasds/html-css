@@ -20,7 +20,7 @@ body{
 
 main{
     position: relative;
-    height: 100vh;
+    height: 100vh; /* Atributo utilizado para fazer o main ocupar 100% da view height */
 }
 
 section#telefone{
@@ -62,7 +62,7 @@ section#redes > a > img{
 }
 
 section#redes img:hover{
-    border: 2px solid rgba(255, 255, 255, 0.59);
+    border: 2px solid rgba(255, 255, 255, 0.59); /* Bloco de Código feito para animação dos botões lateralizados */
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
     transition: transform .5s, border 1s;
