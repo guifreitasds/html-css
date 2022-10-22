@@ -39,23 +39,25 @@
 </head>
 <body>
     <h1>Teste de Formulário com color, range e file</h1>
-    <fieldset>
+    <form action="" method="post">
+        <fieldset>
+            <p>
+                <label for="icolor">Cor: </label>
+                <input type="color" name="color" id="icolor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel">Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="0" max="5">
+            </p>
+            <p>
+                <label for="ifile">Arquivo: </label>
+                <input type="file" name="ifile" id="ifile">
+            </p>
+        </fieldset>
         <p>
-            <label for="icolor">Cor: </label>
-            <input type="color" name="color" id="icolor" value="#00ff00">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
-        <p>
-            <label for="inivel">Nível de Satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="0" max="5">
-        </p>
-        <p>
-            <label for="ifile">Arquivo: </label>
-            <input type="file" name="ifile" id="ifile">
-        </p>
-    </fieldset>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    </form>
 </body>
 </html>
