@@ -31,6 +31,11 @@
     img#phone{display: none;}
 }
 
-@media screen and (min-width: 1201px) { /*Telas Grandes*/
+@media screen and (min-width: 1401px) { /*Telas Grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv{display: block;}
+    img#phone{display: none;}
     
 }
