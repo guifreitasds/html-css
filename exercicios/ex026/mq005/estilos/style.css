@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
-/* Estilos para telas */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v63/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+}
+
+/* Mobile First */
 
 *{
     margin: 0;
@@ -18,6 +25,7 @@ header{
 
 header > h1{
     text-align: center;
+    padding: 5px;
 }
 
 
@@ -26,12 +34,27 @@ header > h1{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48    
+    
 }
+
 
 .material-symbols-outlined:hover{
     transition-duration: 250ms;
@@ -82,4 +105,18 @@ article{
 }
 article > p{
     text-indent: 15px;
+}
+
+/*Estilo para telas maiores*/
+
+@media screen and (min-width: 780px) {
+    i.material-symbols-outlined{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
 }

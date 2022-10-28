@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Media Queries</title>
     <link rel="stylesheet" href="estilos/style.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Meu site</h1>
-        <i class="material-symbols-outlined" style="display: block;" onclick="exibir()">menu</i>
+        <i class="material-symbols-outlined" onclick="exibir()">menu</i>
         <menu id="itens">
             <ul>
                 <li><a href="">Política</a></li>
@@ -37,6 +36,13 @@
         function exibir(){
             if(itens.style.display=='none'){
                 itens.style.display = 'block';
+            } else{
+                itens.style.display='none'
+            }
+        }
+        function changeSize(){
+            if(window.innerWidth>=780){
+                itens.style.display='block'
             } else{
                 itens.style.display='none'
             }
