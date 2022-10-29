@@ -10,7 +10,7 @@
 <body onresize="changeSize()">
     <header>
         <h1>Meu site</h1>
-        <i class="material-symbols-outlined" onclick="exibir()">menu</i>
+        <i class="material-symbols-outlined" onclick="exibir()">menu</i> <!-- Utilização da tag i (italic) para icons, recomendada pelo Google -->
         <menu id="itens">
             <ul>
                 <li><a href="">Política</a></li>
@@ -33,14 +33,14 @@
         </article>
     </main>
     <script>
-        function exibir(){
+        function exibir(){ // Função utilizada para exibir e parar de exibir o menu
             if(itens.style.display=='none'){
                 itens.style.display = 'block';
             } else{
                 itens.style.display='none'
             }
         }
-        function changeSize(){
+        function changeSize(){ // Função utilizada para eliminar um pequeno bug (em caso de abertura e fechamento do menu mobile o menu desktop não era mostrado)
             if(window.innerWidth>=780){
                 itens.style.display='block'
             } else{
